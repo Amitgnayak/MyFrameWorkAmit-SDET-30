@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test Runner 1(failed)">
+    <classes>
+      <class name="com.crm.ContactTests.CreateContactWithOrgTest">
+        <methods>
+          <include name="connectDataBase"/>
+          <include name="launchTheBrowser"/>
+          <include name="closeDb"/>
+          <include name="createContactWithOrgTest"/>
+          <include name="login"/>
+          <include name="closeBrowser"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- com.crm.ContactTests.CreateContactWithOrgTest -->
+      <class name="com.crm.ContactTests.CreateContactTest">
+        <methods>
+          <include name="connectDataBase"/>
+          <include name="launchTheBrowser"/>
+          <include name="createContactTest"/>
+          <include name="closeDb"/>
+          <include name="login"/>
+          <include name="closeBrowser"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- com.crm.ContactTests.CreateContactTest -->
+    </classes>
+  </test> <!-- Test Runner 1(failed) -->
+  <test thread-count="2" parallel="tests" name="Test runner 2(failed)">
+    <classes>
+      <class name="com.crm.ContactTests.CreateContactWithLeadSourceTest">
+        <methods>
+          <include name="connectDataBase"/>
+          <include name="launchTheBrowser"/>
+          <include name="sampleTestScript1"/>
+          <include name="closeDb"/>
+          <include name="sampleTestScript"/>
+          <include name="login"/>
+          <include name="closeBrowser"/>
+          <include name="sampleTestScript2"/>
+          <include name="createContactWithLeadSourceTest"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- com.crm.ContactTests.CreateContactWithLeadSourceTest -->
+      <class name="com.crm.ContactTests.CreateContactwithMultipleDataTest">
+        <methods>
+          <include name="createContactWithMultipleData"/>
+          <include name="connectDataBase"/>
+          <include name="launchTheBrowser"/>
+          <include name="closeDb"/>
+          <include name="login"/>
+          <include name="closeBrowser"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- com.crm.ContactTests.CreateContactwithMultipleDataTest -->
+    </classes>
+  </test> <!-- Test runner 2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
